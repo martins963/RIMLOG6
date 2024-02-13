@@ -1,0 +1,28 @@
+
+Root level exception in OnGUI(): System.NullReferenceException: Object reference not set to an instance of an object
+  at ProsthesesCore.Verb_Ability_LaunchProjectileStatic.get_Caster () [0x00006] in <d506686719094092805947a5a02e5aaf>:0 
+  at Verse.GenUI+<TargetsAt>d__46.MoveNext () [0x00044] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at Verse.GenCollection.FirstOrFallback[T] (System.Collections.Generic.IEnumerable`1[T] source, T fallback) [0x00012] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at RimWorld.Targeter.CurrentTargetUnderMouse (System.Boolean mustBeHittableNowIfNotMelee) [0x0003c] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at (wrapper dynamic-method) RimWorld.Targeter.RimWorld.Targeter.TargeterOnGUI_Patch1(RimWorld.Targeter)
+  at RimWorld.MapInterface.MapInterfaceOnGUI_BeforeMainTabs () [0x00064] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at (wrapper dynamic-method) RimWorld.UIRoot_Play.RimWorld.UIRoot_Play.UIRootOnGUI_Patch2(RimWorld.UIRoot_Play)
+  at (wrapper dynamic-method) Verse.Root.Verse.Root.OnGUI_Patch2(Verse.Root)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch2 (string)
+(wrapper dynamic-method) Verse.Root:Verse.Root.OnGUI_Patch2 (Verse.Root)
+
+
+Exception in UIRootUpdate: System.NullReferenceException: Object reference not set to an instance of an object
+  at ProsthesesCore.Verb_Ability_LaunchProjectileStatic.get_Caster () [0x00006] in <d506686719094092805947a5a02e5aaf>:0 
+  at Verse.GenUI+<TargetsAt>d__46.MoveNext () [0x00044] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at Verse.GenCollection.FirstOrFallback[T] (System.Collections.Generic.IEnumerable`1[T] source, T fallback) [0x00012] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at RimWorld.Targeter.CurrentTargetUnderMouse (System.Boolean mustBeHittableNowIfNotMelee) [0x0003c] in <eeb29632ad124b59a4e69a77603ced84>:0 
+  at (wrapper dynamic-method) RimWorld.Targeter.RimWorld.Targeter.TargeterUpdate_Patch2(RimWorld.Targeter)
+  at (wrapper dynamic-method) RimWorld.MapInterface.RimWorld.MapInterface.MapInterfaceUpdate_Patch1(RimWorld.MapInterface)
+  at RimWorld.UIRoot_Play.UIRootUpdate () [0x00015] in <eeb29632ad124b59a4e69a77603ced84>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch2 (string)
+RimWorld.UIRoot_Play:UIRootUpdate ()
+(wrapper dynamic-method) Verse.Root:Verse.Root.Update_Patch1 (Verse.Root)
+Verse.Root_Play:Update ()
